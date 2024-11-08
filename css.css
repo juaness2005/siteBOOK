@@ -1,0 +1,90 @@
+/* inicio dos botões de historia */
+.container {
+    display: flex; /* Usa o Flexbox para distribuir as caixas */
+    justify-content: center; /* Centraliza as caixas horizontalmente */
+    align-items: center; /* Centraliza as caixas verticalmente */
+    gap: 10px; /* Espaçamento pequeno entre as caixas */
+    padding: 20px; /* Padding para o contêiner */
+}
+
+.caixa {
+    flex: 0 1 155px; /* Flex-grow (0), flex-shrink (1), flex-basis (280px) */
+    padding: 10px; /* Espaço interno reduzido dentro da caixa */
+    border: 2px solid #e9e9e9; /* Borda da caixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: #f9f9f9; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para um efeito visual */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse a caixa */
+    transition: box-shadow 0.3s, transform 0.3s; /* Efeito de hover na caixa */
+}
+
+.caixa:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+    transform: translateY(-5px); /* Levanta um pouco a caixa */
+}
+
+.imagem {
+    width: 80%; /* A imagem será maior */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaço entre a imagem e o botão */
+    object-fit: contain; /* Ajusta a imagem sem cortar */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao {
+    display: flex; /* Usa o Flexbox para alinhar os itens dentro do botão */
+    flex-direction: column; /* Alinha os itens na direção da coluna (imagem acima do texto) */
+    align-items: center; /* Alinha o conteúdo no centro */
+    justify-content: center; /* Alinha o conteúdo no centro */
+    padding: 10px 15px; /* Ajusta o padding para reduzir o espaço interno */
+    background-color: #150272; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 16px; /* Tamanho do texto */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    transition: background-color 0.3s; /* Efeito de transição no hover */
+    width: 120px; /* Define a largura do botão */
+    height: 150px; /* Define a altura do botão */
+}
+
+.botao:hover {
+    background-color: #060124; /* Cor ao passar o mouse */
+}
+
+.botao img {
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+    width: 40px; /* Define o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+/* fim dos botões das historias */
+
+/* começo da caixa da sinopse */
+.sinopse {
+    flex: 0 1 155px; /* Flex-grow (0), flex-shrink (1), flex-basis (280px) */
+    padding: 10px; /* Espaço interno reduzido dentro da caixa */
+    border: 2px solid #e9e9e9; /* Borda da caixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: #f9f9f9; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para um efeito visual */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse a caixa */
+    transition: box-shadow 0.3s, transform 0.3s; /* Efeito de hover na caixa */
+}
+
+.sinopse h2 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto-grande {
+    width: 80%; /* O texto ocupa 80% da largura da tela */
+    margin: 0; /* Remove margens automáticas */
+    padding: 20px; /* Espaço interno ao redor do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* fim da caixa da sinopse */
+
